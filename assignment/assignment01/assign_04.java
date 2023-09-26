@@ -17,18 +17,16 @@ public class assign_04 {
 				System.out.println(number+"는 저장되지 않습니다.");
 				break;
 				}
-			
 			myarray[i]= number;
 			System.out.print("정수를 입력하세요 : ");
 			number = myScanner.nextInt();
 			i++;
 		}
-		
 		System.out.println("myarray에는");
 		for (int k=0;k<myarray.length;k++) {
-			if (k==myarray.length-1) System.out.print(myarray[myarray.length-1]+"가 저장되어 있습니다.");
-			else System.out.print(k+"번째 "+myarray[k]+", ");
+			System.out.print(k+" 번째"+myarray[k]);
+			if (k<myarray.length-1) System.out.print(", ");
 		}
-		
+		System.out.println("가 저장되어 있습니다.");
 	}
 }
